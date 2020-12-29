@@ -1,0 +1,11 @@
+click request
+open request menu
+click fix
+starts timer - creates timer object, tenant keeps reference
+tenant reduces timer - updates timer object
+timer <= 0 - change timer text to complete, next time request button is clicked finish request
+
+
+while request is active
+have timer object created and counting down
+deactivate other request buttons or deactivate the fix button, maybe leave a message saying you can't have more than one request active at a time

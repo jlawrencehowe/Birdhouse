@@ -1,0 +1,8 @@
+money gen - self, global
+mat gen - single, global
+max held - self, global
+max gift in shop?
+reduce cost of tenant?
+reduce cost of contract
+reduce cost of gifts
+increase effectiveness of gifts

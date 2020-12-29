@@ -1,0 +1,60 @@
+Tenant: held money (set value)
+
+	isUnlocked (set value)
+
+	request level (call tenant.IncreaseRequest() the number corresponding to request level)
+	unlocked sprites (linked to requests)
+	checkmark (linked to requests)
+
+	held mat (set value)
+	//max mat (set value) (Doesn't change)
+	//mat per sec (set value) (Doesn't change)
+	
+	//favor level
+	favor amount (set value, then call CheckFavorLevel until it returns false)
+	active hearts (linked to favor level)
+	max money (linked to favor level)
+	money per sec (linked to favor level)
+	isGenMat (linked to favor level)
+
+Delivery Bird:
+	all held mats
+	all max mats
+	Update matPerSec
+
+Currency Manager:
+	all held mats/money
+
+GameController:
+	giftShopTimer (if more than time alloted, set to 0)
+	CurrencyUpdate/RawMat update timers (up to a cap of 2hr?)
+	
+SavedData:
+	contract levels
+
+Inventory:
+	gifts in inventory
+
+Reputation:
+	rep amount
+	rep level (reputation.quickAddReputation)
+	contract levels unlocked through rep (reputation.quickAddReputation)
+	roof location (reputation.quickAddReputation)
+
+Touchscreen:
+	botMax, topMax (reputation.quickAddReputation)
+
+Tutorial:
+	which part of the tutorial
+
+ShopMenu:
+	current shop gifts
+
+RawMatUpgradeMenu:
+	available contracts (and know which levels have been purchased)(done through reputation)
+
+
+Rate of saves:
+Locally:
+big purchases (contracts, gifts, tenants, requests, favors)
+on collection of mats/currency
